@@ -1,0 +1,14 @@
+#JSGF V1.0;
+
+grammar com.ravenxq.home.itunes;
+
+public <itunesCurrentSongCommand> = [What is the] current (song | track);
+
+public <itunesTrackChangeCommand> = [play] (previous {PREVIOUS} | next {NEXT}) (track | song);
+public <itunesPlayPauseCommand> = (pause {PAUSE} | play {PLAY}) (music | track | song);
+public <itunesPlayPlaylistCommand> = playlist  <DICTATION> [random {RANDOM}];
+public <itunesPlayArtistCommand> = play artist <DICTATION>;
+public <itunesPlayRandomCommand> = play [not {NOT}] (random | shuffle);
+public <itunesPlayRepeatCommand> = play (repeat all {REPEAT_ALL}| repeat one {REPEAT_ONE}| (repeat none | no repeat) {REPEAT_NONE});
+public <itunesVolumeCommand> =  music volume (up {UP} | down {DOWN} | <DICTATION> {VOLUME});
+public <itunesMuteCommand> =  music mute;

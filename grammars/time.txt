@@ -1,0 +1,6 @@
+#JSGF V1.0;
+
+grammar com.ravenxq.home.time;
+
+
+public <timeCommand> = what time is it? | could you tell me the time?;

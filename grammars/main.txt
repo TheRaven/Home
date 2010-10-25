@@ -1,0 +1,7 @@
+#JSGF V1.0;
+
+grammar com.ravenxq.home.main;
+
+
+
+public <command> =  home | home? ;

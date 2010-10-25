@@ -1,0 +1,6 @@
+#JSGF V1.0;
+
+grammar com.ravenxq.home.weather;
+
+
+public <weatherCommand> = [what is the] current temperature;
