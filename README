@@ -1,5 +1,9 @@
 Voice recognition program using Scala
 
+
+added to the readme
+
+
 Uses the Java spec with cloudgarden's implementation (http://cloudgarden.com/) for voice recognition and text to speech.
 Uses itunesController from http://dot-totally.co.uk/software/itunescon/ (which uses Jacob a com library)
 
